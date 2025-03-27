@@ -1,7 +1,8 @@
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { HomeScreenView } from "../../defaultScreens/HomeScreen";
-import { GraphQLModuleStack } from "../../modules/GraphQLModule";
-import { RESTModuleStack } from "../../modules/RESTModule";
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import { HomeScreenView } from '../../defaultScreens/HomeScreen';
+import { GraphQLModuleStack } from '../../modules/GraphQLModule';
+import { RESTModuleStack } from '../../modules/RESTModule';
 
 export type MainRoutesParamList = {
   HomeScreen: undefined;
@@ -9,7 +10,7 @@ export type MainRoutesParamList = {
   RESTModule: undefined;
 };
 
-const Stack = createNativeStackNavigator<MainRoutesParamList, "MainRoutes">();
+const Stack = createNativeStackNavigator<MainRoutesParamList, 'MainRoutes'>();
 const MainRoutes = () => {
   return (
     <Stack.Navigator id="MainRoutes">
